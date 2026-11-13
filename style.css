@@ -1,0 +1,309 @@
+
+/* =========================
+   GENERAL WEBSITE STYLING
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #080b14;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 80vh;
+    padding: 30px;
+    gap: 30px;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+#main-heading {
+    color: #00aaff;
+    font-size: 48px;
+}
+
+.hero-text h2 {
+    color: white;
+}
+
+.hero-text p {
+    color: #b8c2d1;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00aaff;
+    transition: transform 0.3s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-text button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin-right: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-text button:hover {
+    background-color: #0077cc;
+}
+
+
+/* =========================
+   SECTION CARDS
+========================= */
+
+.section {
+    background-color: #111827;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #1e3a5f;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-4px);
+    border-color: #00aaff;
+}
+
+.section h3 {
+    color: #00aaff;
+    font-size: 24px;
+}
+
+.section p {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   LISTS
+========================= */
+
+.section li {
+    color: #cbd5e1;
+    padding: 5px;
+}
+
+
+/* =========================
+   EDUCATION TABLE
+========================= */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #334155;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #0077cc;
+    color: white;
+}
+
+td {
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   SECTION BUTTONS
+========================= */
+
+.section button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.section button:hover {
+    background-color: #0077cc;
+}
+
+
+/* =========================
+   GOOGLE MAPS IFRAME
+========================= */
+
+iframe {
+    max-width: 100%;
+    border: 0;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    background-color: #080b14;
+    border-top: 1px solid #1e3a5f;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Hero layout */
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: auto;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+
+    /* Profile image appears above text */
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* Introduction */
+
+    .hero-text {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    #main-heading {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    /* Section cards */
+
+    .section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .section h3 {
+        font-size: 21px;
+    }
+
+    /* Table */
+
+    .table-container table {
+        min-width: 500px;
+    }
+
+    /* College map */
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 20px 10px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE SCREENS
+========================= */
+
+@media screen and (max-width: 400px) {
+
+    #main-heading {
+        font-size: 28px;
+    }
+
+    .hero-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero-text button {
+        padding: 10px 16px;
+        margin: 5px;
+    }
+
+}
