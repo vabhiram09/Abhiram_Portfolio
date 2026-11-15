@@ -1,8 +1,4 @@
 
-/* =========================
-   GENERAL WEBSITE STYLING
-========================= */
-
 * {
     box-sizing: border-box;
 }
@@ -18,11 +14,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
-/* =========================
-   HERO SECTION
-========================= */
 
 .hero {
     display: flex;
@@ -44,6 +35,7 @@ body {
 
 .hero-text h2 {
     color: white;
+    font-family: Georgia, serif;
 }
 
 .hero-text p {
@@ -51,11 +43,6 @@ body {
     font-size: 18px;
     line-height: 1.7;
 }
-
-
-/* =========================
-   PROFILE IMAGE
-========================= */
 
 .hero-image img {
     width: 280px;
@@ -69,11 +56,6 @@ body {
 .hero-image img:hover {
     transform: scale(1.04);
 }
-
-
-/* =========================
-   HERO BUTTONS
-========================= */
 
 .hero-text button {
     background-color: #00aaff;
@@ -90,11 +72,6 @@ body {
 .hero-text button:hover {
     background-color: #0077cc;
 }
-
-
-/* =========================
-   SECTION CARDS
-========================= */
 
 .section {
     background-color: #111827;
@@ -113,6 +90,7 @@ body {
 .section h3 {
     color: #00aaff;
     font-size: 24px;
+    font-family: Georgia, serif;
 }
 
 .section p {
@@ -120,20 +98,10 @@ body {
     line-height: 1.7;
 }
 
-
-/* =========================
-   LISTS
-========================= */
-
 .section li {
     color: #cbd5e1;
     padding: 5px;
 }
-
-
-/* =========================
-   EDUCATION TABLE
-========================= */
 
 .table-container {
     width: 100%;
@@ -161,11 +129,6 @@ td {
     color: #cbd5e1;
 }
 
-
-/* =========================
-   SECTION BUTTONS
-========================= */
-
 .section button {
     background-color: #00aaff;
     color: white;
@@ -181,21 +144,11 @@ td {
     background-color: #0077cc;
 }
 
-
-/* =========================
-   GOOGLE MAPS IFRAME
-========================= */
-
 iframe {
     max-width: 100%;
     border: 0;
     border-radius: 8px;
 }
-
-
-/* =========================
-   FOOTER
-========================= */
 
 footer {
     text-align: center;
@@ -207,17 +160,9 @@ footer {
     font-size: 14px;
 }
 
-
-/* =========================
-   MOBILE RESPONSIVE DESIGN
-========================= */
-
 @media screen and (max-width: 768px) {
 
-    /* Hero layout */
-
     .hero {
-        display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
@@ -227,18 +172,10 @@ footer {
         gap: 25px;
     }
 
-    /* Profile image appears above text */
-
-    .hero-image {
-        order: -1;
-    }
-
     .hero-image img {
         width: 180px;
         height: 180px;
     }
-
-    /* Introduction */
 
     .hero-text {
         width: 100%;
@@ -253,8 +190,6 @@ footer {
         font-size: 16px;
     }
 
-    /* Section cards */
-
     .section {
         margin: 15px;
         padding: 20px;
@@ -264,31 +199,19 @@ footer {
         font-size: 21px;
     }
 
-    /* Table */
-
     .table-container table {
         min-width: 500px;
     }
-
-    /* College map */
 
     iframe {
         width: 100%;
         height: 250px;
     }
 
-    /* Footer */
-
     footer {
         padding: 20px 10px;
     }
-
 }
-
-
-/* =========================
-   SMALL MOBILE SCREENS
-========================= */
 
 @media screen and (max-width: 400px) {
 
@@ -305,5 +228,4 @@ footer {
         padding: 10px 16px;
         margin: 5px;
     }
-
 }
